@@ -1,128 +1,128 @@
 {
-interactionModel: {
-languageModel: {
-invocationName: "my restaurant",
-intents: [
-{
-name: "AMAZON.CancelIntent",
-samples: [ ]
-},
-{
-name: "AMAZON.HelpIntent",
-samples: [ ]
-},
-{
-name: "AMAZON.StopIntent",
-samples: [ ]
-},
-{
-name: "AMAZON.NavigateHomeIntent",
-samples: [ ]
-},
-{
-name: "bookingRestaurant",
-slots: [
-{
-name: "people",
-type: "AMAZON.NUMBER"
-},
-{
-name: "time",
-type: "AMAZON.TIME"
-}
-],
-samples: [
-"Reservation for {people}",
-"{people} at madrid center",
-"dinner for {people} {time}",
-"we are going to {people} at {time}",
-"i want to eat this evening {people}",
-"i want to eat {people} {time}",
-"i would like to have lunch {time}",
-"i am hungry give me a restaurant reservation {time} ",
-"dinner {people} tonight",
-"i want to reserve a restaurant at {time}",
-"we are going to be {people}",
-"book me a table {people} at {time}",
-"I want to book {people} at {time}"
-]
-},
-{
-name: "searchRestaurant",
-slots: [
-{
-name: "foodType",
-type: "foodType"
-},
-{
-name: "city",
-type: "AMAZON.City"
-}
-],
-samples: [
-"is there a {foodType} restaurant {city}",
-"i want to have {foodType} {city}",
-"i want to eat a {foodType} in {city}",
-"i fancy a {foodType} restuarant",
-"what {foodType} restaurant do you have",
-"i want a {foodType} restaurant with terrace {city}",
-"i want to book a {foodType} restaurant",
-"search me a restaurant"
-]
-}
-],
-types: [
-{
-name: "foodType",
-values: [
-{
-name: {
-value: "italian",
-synonyms: [
-"pasta",
-"pizza"
-]
-}
-},
-{
-name: {
-value: "chinese",
-synonyms: [
-"dim sum"
-]
-}
-},
-{
-name: {
-value: "spanish",
-synonyms: [
-"tortilla",
-"paella"
-]
-}
-},
-{
-name: {
-value: "arab",
-synonyms: [
-"tunisian",
-"morocan",
-"tagine",
-"couscous"
-]
-}
-},
-{
-name: {
-value: "french",
-synonyms: [
-"pot au feu"
-]
-}
-}
-]
-}
-]
-}
-}
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my restaurant",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "bookingRestaurant",
+                    "slots": [
+                        {
+                            "name": "people",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "time",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "Reservation for {people}",
+                        "{people} at madrid center",
+                        "dinner for {people} {time}",
+                        "we are going to {people} at {time}",
+                        "i want to eat this evening {people}",
+                        "i want to eat {people} {time}",
+                        "i would like to have lunch {time}",
+                        "i am hungry give me a restaurant reservation {time} ",
+                        "dinner {people} tonight",
+                        "i want to reserve a restaurant at {time}",
+                        "we are going to be {people}",
+                        "book me a table {people} at {time}",
+                        "I want to book {people} at {time}"
+                    ]
+                },
+                {
+                    "name": "searchRestaurant",
+                    "slots": [
+                        {
+                            "name": "foodType",
+                            "type": "foodType"
+                        },
+                        {
+                            "name": "city",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "is there a {foodType} restaurant {city}",
+                        "i want to have {foodType} {city}",
+                        "i want to eat a {foodType} in {city}",
+                        "i fancy a {foodType} restuarant",
+                        "what {foodType} restaurant do you have",
+                        "i want a {foodType} restaurant with terrace {city}",
+                        "i want to book a {foodType} restaurant",
+                        "search me a restaurant"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "foodType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "italian",
+                                "synonyms": [
+                                    "pasta",
+                                    "pizza"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chinese",
+                                "synonyms": [
+                                    "dim sum"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spanish",
+                                "synonyms": [
+                                    "tortilla",
+                                    "paella"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arab",
+                                "synonyms": [
+                                    "tunisian",
+                                    "morocan",
+                                    "tagine",
+                                    "couscous"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "french",
+                                "synonyms": [
+                                    "pot au feu"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 }
